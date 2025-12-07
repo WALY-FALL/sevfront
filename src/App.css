@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container-entete{
+    height: 50px;
+    /*background: linear-gradient(to right,  #6dd5ed, #2193b0);*/
+    background: #2193b0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid;
+    border-bottom-width:1px ;
+   
+}
+
+.container-logo{
+    width: 20%;
+    font-size: x-large;
+    margin-left:10px;
+}
+
+.vide{
+    width: 50%;
+}
+
+.navbar{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+   
+}
+.li-link{
+    text-decoration: none;
+    font-size: larger;
+}
+
+.div-home{
+    height: 500px;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+}
+.signup{
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 30%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    margin-top: 10px;
+  
+    
+}
+
+.input{
+    height: 50px;
+    width: 85%;
+    border: none;
+    border-bottom: solid
+}
+
+.button{
+    width: 50%;
+    height: 50px;
+    background:#6dd5ed;
+    border-radius: 10px;
+    border: none;
+    font-size:medium;
+
+}
+
+.container-espaceprofs{
+    display: flex;
+}
+
+.menu-vertical{
+    width: 15%;
+    border-right: solid;
+    border-width: 1px;
+}
+
+.container-classes{
+    width: 85%;
+    height: 500px;
+  
+}
+
+.navbar-classes{
+    height: 80px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-detail-classes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.button-deatil-classe{
+    background-color: #f5f5f5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom:  20px;
+    cursor: pointer;
+    color: black;
+    font-size: medium;
+
+}
+
+.menu-vertical-espaceprofs{
+    width: 220px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    padding: "20px";
+  
+
+}
+
+.fixed-navbar {
+    position: fixed;        /* reste collé en haut */
+    /*top: 0;
+    left: 0;*/
+    width: 100%;
+    background-color: #fff; /* ou la couleur que tu veux */
+    z-index: 1000;          /* au-dessus du contenu */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+.upload-form-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+.titre-classe{
+    margin-top: 10px;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+
+}
+  
+  
+.conteneur-classe-cours{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.titre-classe{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+  
