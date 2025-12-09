@@ -37,7 +37,7 @@ const ListeCours = ({ classeId }) => {
 
   if (loading) return <p>Chargement des cours...</p>;
   if (coursListe.length === 0) return <p>Aucun cours pour cette classe.</p>;
-
+  console.log("Cours:", c);
   return (
     <div>
       <h3>📚 Cours de la classe </h3>
