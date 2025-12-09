@@ -80,11 +80,24 @@ import axios from "axios";
       // Optionnel : afficher un lien vers le fichier
       if (res.data.fichiers && res.data.fichiers.length > 0) {
         //const fichierUrl = `http://localhost:8989/uploads/${res.data.fichiers[0]}`;
-        const fichierUrl = `${API_URL}/uploads/${res.data.fichiers[0]}`;
+        //const fichierUrl = `${API_URL}/uploads/${res.data.fichiers[0]}`;
+        const fichierUrl = res.data.fichiers[0].url;  // Cloudinary URL
         setMessage(
+          `✅ Cours uploadé ! Fichier disponible ici : 
+           <a href="${fichierUrl}" target="_blank" rel="noopener noreferrer">
+              ${res.data.fichiers[0].nom}
+           </a>`
+        );
+        
+        /*setMessage(
           `✅ Cours uploadé ! Fichier disponible ici : ` +
           `<a href="${fichierUrl}" target="_blank" rel="noopener noreferrer">${res.data.fichiers[0]}</a>`
-        );
+        );*/
+
+        /*setMessage(`Cours uploadé ! 
+  <a href="${fichierUrl}" target="_blank">Ouvrir le fichier</a>
+`);*/
+
       }
 
     } catch (err) {
