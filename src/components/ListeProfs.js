@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+
+const API_URL = process.env.REACT_APP_API_URL;
+
 const ListeProfs = ({ onSelectProf }) => {
   const [profs, setProfs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -8,7 +11,7 @@ const ListeProfs = ({ onSelectProf }) => {
   useEffect(() => {
     const fetchProfs = async () => {
       try {
-        const res = await axios.get("http://localhost:8989/api/profs"); // attention: /profs, pas /prof
+        const res = await axios.get(`${API_URL}/profs`); // attention: /profs, pas /prof
         setProfs(res.data.profs); // ton backend renvoie { success, message, profs }
       } catch (err) {
         console.error("Erreur lors du chargement des profs:", err);
