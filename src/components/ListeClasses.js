@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const ListeClasses = ({ profId, onChoisirClasse }) => {
   const [classes, setClasses] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,7 +12,7 @@ const ListeClasses = ({ profId, onChoisirClasse }) => {
   useEffect(() => {
     const fetchClasses = async () => {
       try {
-        const res = await axios.get(`http://localhost:8989/api/classes/profs/${profId}`);
+        const res = await axios.get(`${API_URL}/classes/profs/${profId}`);
         setClasses(res.data.classes);
       } catch (err) {
         console.error("Erreur lors du chargement des classes:", err);
