@@ -1,0 +1,51 @@
+/* Conteneur global */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Formulaire */
+  .formulaire {
+    width: 100%;
+    max-width: 420px; /* desktop */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Titre */
+  .formulaire h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Inputs & textarea */
+  .formulaire input,
+  .formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+  }
+  
+  /* Textarea spécifique */
+  .formulaire textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Message erreur */
+  .error {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+  }
+  
