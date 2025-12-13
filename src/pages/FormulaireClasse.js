@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import  "./App.css";
 
 
 
@@ -35,8 +36,45 @@ const FormulaireClasse=({ onClassCreated })=>{
     }
   };
   
+  return (
+    <div className="form-wrapper">
+      <form className="formulaire" onSubmit={handleSubmit}>
+        <h1>Classe</h1>
+  
+        <input
+          type="text"
+          placeholder="Série"
+          value={serie}
+          onChange={(e) => setSerie(e.target.value)}
+          required
+        />
+  
+        <input
+          type="text"
+          placeholder="Niveau"
+          value={niveau}
+          onChange={(e) => setNiveau(e.target.value)}
+          required
+        />
+  
+        <textarea
+          placeholder="Description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          required
+        />
+  
+        <button className="btn" type="submit">
+          Créer la classe
+        </button>
+      </form>
+  
+      {message && <p className="error">{message}</p>}
+    </div>
+  );
+  
 
-    return(
+    /*return(
     
         <div >
       <form className="formulaire" onSubmit={handleSubmit}>
@@ -67,7 +105,7 @@ const FormulaireClasse=({ onClassCreated })=>{
       </form>
       {message && <p>{message}</p>}
     </div> 
-    );
+    );*/
 }
 
 export default FormulaireClasse;
