@@ -38,7 +38,7 @@ const FormulaireClasse=({ onClassCreated })=>{
   
   return (
     <div className="form-wrapper">
-      <form className="formulaire" onSubmit={handleSubmit}>
+      <form className="formulaire-classe" onSubmit={handleSubmit}>
         <h1>Classe</h1>
   
         <input

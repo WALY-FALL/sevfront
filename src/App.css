@@ -188,7 +188,7 @@ body{
   }
   
   /* Formulaire */
-  .formulaire {
+  .formulaire-classe {
     width: 100%;
     max-width: 420px; /* desktop */
     background-color: #f9f9f9;
