@@ -95,7 +95,7 @@ useEffect(() => {
       }
   
       // 1️⃣ Vérifier si l'élève a déjà accès à cette classe pour ce prof
-      const verif = await axios.get(`http://localhost:8989/api/demandes/eleve/${eleveId}`);
+      const verif = await axios.get(`${API_URL}/demandes/eleve/${eleveId}`);
   
       if (verif.data.statut === "accepte" && verif.data.classeId === classeIdChoisie) {
         // Accès déjà accepté → on active la classe directement
@@ -106,7 +106,7 @@ useEffect(() => {
       }
   
       // 2️⃣ Sinon → envoyer une nouvelle demande
-      const res = await axios.post("http://localhost:8989/api/demandes/demande", {
+      const res = await axios.post(`${API_URL}/demandes/demande`, {
         eleveId,
         profId,
         classeId: classeIdChoisie,
