@@ -5,6 +5,8 @@ import ListeClasses from "./ListeClasses";
 import ListeCoursEleve from "./ListeCoursEleve";
 //import ListeEleves from "./ListeEleves";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const EleveDashboard = () => {
   const [profs, setProfs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -19,7 +21,7 @@ const EleveDashboard = () => {
     const fetchProfs = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:8989/api/profs");
+        const response = await axios.get(`${API_URL}/profs`);
         setProfs(response.data);
       } catch (err) {
         console.error("Erreur lors du chargement des profs :", err);
