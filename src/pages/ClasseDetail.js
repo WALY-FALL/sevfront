@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-const ClasseDetail = () => {
+  const ClasseDetail = () => {
   const { id } = useParams();
   const [classe, setClasse] = useState(null);
 
@@ -19,8 +19,6 @@ const ClasseDetail = () => {
   }, [id]);
 
   if (!classe) return <p>Chargement contenu classe...</p>;
-
-  
 
   return (
     <div style={{ padding: "20px" }}>
