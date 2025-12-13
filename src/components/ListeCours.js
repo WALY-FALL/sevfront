@@ -88,16 +88,16 @@ const ListeCours = ({ classeId }) => {
             {/* 🗑️ BOUTON SUPPRIMER */}
             <button
               onClick={() => handleDelete(c._id)}
-              /*style={{
-                backgroundColor: "#dc3545",
-                color: "white",
+              style={{
+                //backgroundColor: "#dc3545",
+                //color: "white",
                 border: "none",
                 padding: "6px 10px",
                 borderRadius: "5px",
                 cursor: "pointer",
                 fontSize: "12px",
                 width: "100%",
-              }}*/
+              }}
             >
               🗑 Supprimer
             </button>
