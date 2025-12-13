@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-  const PosterCours = ({ onClose, selectedClasseId }) => {
+  const PosterCours = ({ onClose, selectedClasseId, onCoursAjoute }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState("");
@@ -61,26 +61,32 @@ import axios from "axios";
     formData.append("fichiers", selectedFile);
    
 
-    try {
+   try {
       setUploading(true);
-      //const res = await axios.post("http://localhost:8989/api/cours",formData,
+
       const res = await axios.post(`${API_URL}/cours`,formData,
         {
           headers: { 
             "Content-Type": "multipart/form-data",
             Authorization: `Bearer ${token}`,
           },
-        }
-      );
+        });
+        const nouveauCours = res.data; // Le cours créé renvoyé par le backend
+
+
 
       setMessage("✅ Cours uploadé avec succès !");
       setSelectedFile(null);
       setTitre("");
       setContenu("");
+
+        // ⚡ Mise à jour immédiate de la liste des cours
+  if (onCoursAjoute) {
+    onCoursAjoute(nouveauCours);
+  }
       // Optionnel : afficher un lien vers le fichier
       if (res.data.fichiers && res.data.fichiers.length > 0) {
-        //const fichierUrl = `http://localhost:8989/uploads/${res.data.fichiers[0]}`;
-        //const fichierUrl = `${API_URL}/uploads/${res.data.fichiers[0]}`;
+
         const fichierUrl = res.data.fichiers[0].url;  // Cloudinary URL
         setMessage(
           `✅ Cours uploadé ! Fichier disponible ici : 
@@ -89,15 +95,6 @@ import axios from "axios";
            </a>`
         );
         
-        /*setMessage(
-          `✅ Cours uploadé ! Fichier disponible ici : ` +
-          `<a href="${fichierUrl}" target="_blank" rel="noopener noreferrer">${res.data.fichiers[0]}</a>`
-        );*/
-
-        /*setMessage(`Cours uploadé ! 
-  <a href="${fichierUrl}" target="_blank">Ouvrir le fichier</a>
-`);*/
-
       }
 
     } catch (err) {
@@ -108,6 +105,7 @@ import axios from "axios";
     }
   };
 
+  
   return (
     <div
       style={{

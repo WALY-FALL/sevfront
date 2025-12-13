@@ -44,20 +44,8 @@ const Espaceprofs = () => {
     if (storedEmail) setEmail(storedEmail);
     if (storedProfId) setProfId(storedProfId);
   }, []);
-  /*useEffect(() => {
-    fetchClasses();
-
-    const storedEmail = localStorage.getItem("email");
-    const storedProfId = localStorage.getItem("profId"); // ✅ récupéré au login
-    if (storedEmail) setEmail(storedEmail);
-    if (storedProfId) setProfId(storedProfId);
-  }, []);
-
-  useEffect(() => {
-    const storedProfId = localStorage.getItem("profId");
-    if (storedProfId) setProfId(storedProfId);
-  }, []);*/
-
+  
+  // Supprimer une classe
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem("token");
@@ -158,15 +146,6 @@ const Espaceprofs = () => {
                 <button>Poster un Quiz</button>
               </nav>
             )}
-
-
-        {/* Formulaire upload */}
-        {/* Formulaire upload {showUploadForm && selectedClasse && (*/}
-        {/*{showUploadForm && (
-          <div style={{ marginBottom: "20px" }}>
-            <PosterCours onClose={() => setShowUploadForm(false)} />
-          </div>
-        )}*/}
 
         {/* 🌍 Détail d’une classe sélectionnée */}
         <div>
