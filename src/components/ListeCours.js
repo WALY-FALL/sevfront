@@ -89,7 +89,7 @@ const ListeCours = ({ classeId }) => {
             <button
               onClick={() => handleDelete(c._id)}
               style={{
-                //backgroundColor: "#dc3545",
+                backgroundColor: "#dc3545",
                 color: "white",
                 border: "none",
                 padding: "6px 10px",
