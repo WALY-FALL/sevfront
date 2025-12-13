@@ -88,7 +88,7 @@ const ListeCours = ({ classeId }) => {
             {/* 🗑️ BOUTON SUPPRIMER */}
             <button
               onClick={() => handleDelete(c._id)}
-              style={{
+             /* style={{
                 //backgroundColor: "#dc3545",
                 //color: "white",
                 border: "none",
@@ -97,7 +97,7 @@ const ListeCours = ({ classeId }) => {
                 cursor: "pointer",
                 fontSize: "12px",
                 width: "100%",
-              }}
+              }}*/
             >
               🗑 Supprimer
             </button>

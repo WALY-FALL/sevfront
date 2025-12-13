@@ -182,7 +182,7 @@ export const LoginEleve = () => {
   );
 };*/
 
-const API_URL = "http://localhost:8989/api";
+const API_URL = process.env.REACT_APP_API_URL;
 
 // ===============================
 // 🔹 SERVICES (backend)
