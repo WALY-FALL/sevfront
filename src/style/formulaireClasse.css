@@ -68,7 +68,7 @@
   
   /* 📦 Carte formulaire */
   .formulaire {
-    width: 100vw;
+    width: 100%;
     max-width: 420px;   /* desktop */
     background: white;
   
@@ -93,7 +93,7 @@
   /* ✏️ Inputs & textarea */
   .formulaire input,
   .formulaire textarea {
-    width: 100%;
+    width: 100vw;
     padding: 14px;
     font-size: 16px;
   
