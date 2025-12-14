@@ -79,10 +79,16 @@ const Navbar = () => {
         </li>
 
         {/* === SIGNUP === */}
-        <li className="dropdown">
+        <li 
+        className="dropdown" 
+        onMouseLeave={() => setShowSignupMenu(false)}
+        >
           <span
             className="li-link dropdown-title"
-            onClick={() => setShowSignupMenu(!showSignupMenu)}
+            onClick={() => {
+              setShowSignupMenu(!showSignupMenu)
+              setShowLoginMenu(false);} // ferme l'autre menu
+            }
           >
             S'inscrire ▾
           </span>
@@ -92,7 +98,10 @@ const Navbar = () => {
               <Link
                 to="/signup-eleve"
                 className="dropdown-item"
-                onClick={() => setMobileOpen(false)}
+                onClick={() => {
+                  setShowSignupMenu(false);
+                  setMobileOpen(false)}
+                }
               >
                 Élève
               </Link>
@@ -101,7 +110,10 @@ const Navbar = () => {
               <Link
                 to="/signup-prof"
                 className="dropdown-item"
-                onClick={() => setMobileOpen(false)}
+                onClick={() => {
+                  setShowSignupMenu(false);
+                  setMobileOpen(false)}
+                }
               >
                 Professeur
               </Link>
@@ -110,10 +122,16 @@ const Navbar = () => {
         </li>
 
         {/* === LOGIN === */}
-        <li className="dropdown">
+        <li 
+        className="dropdown"
+        onMouseLeave={() => setShowLoginMenu(false)}
+        >
           <span
             className="li-link dropdown-title"
-            onClick={() => setShowLoginMenu(!showLoginMenu)}
+            onClick={() => {
+              setShowLoginMenu(!showLoginMenu)
+              setShowSignupMenu(false);} // ferme l'autre menu
+            }
           >
             Se connecter ▾
           </span>
@@ -123,7 +141,10 @@ const Navbar = () => {
               <Link
                 to="/login-eleve"
                 className="dropdown-item"
-                onClick={() => setMobileOpen(false)}
+                onClick={() => {
+                  setShowLoginMenu(false);
+                  setMobileOpen(false)}
+                }
               >
                 Élève
               </Link>
@@ -132,7 +153,10 @@ const Navbar = () => {
               <Link
                 to="/login-prof"
                 className="dropdown-item"
-                onClick={() => setMobileOpen(false)}
+                onClick={() => {
+                  setShowLoginMenu(false);
+                  setMobileOpen(false)}
+                }
               >
                 Professeur
               </Link>
