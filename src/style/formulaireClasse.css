@@ -156,3 +156,18 @@
     }
   }
   
+  @media (max-width: 480px) {
+    .form-wrapper {
+      padding: 0; /* 🔑 enlève les marges grises */
+    }
+  
+    .formulaire {
+      max-width: 100%;
+      width: 100%;
+      min-height: 100vh; /* optionnel : plein écran */
+      border-radius: 0; /* plein largeur = pas d’arrondi */
+      box-shadow: none; /* look mobile propre */
+      padding: 20px;
+    }
+  }
+  
