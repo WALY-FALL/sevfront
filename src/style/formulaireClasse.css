@@ -52,123 +52,88 @@
    RESET / SÉCURITÉ
 ====================== */
 /* === Container général === */
+/* 🌫️ Fond gris pleine page */
 .form-wrapper {
     width: 100%;
-   /* min-height: 100vh;*/
-    min-height: 40vh;
+    min-height: 100vh;
+    background: #f0f2f5;
+  
     display: flex;
     justify-content: center;
     align-items: center;
+  
     padding: 20px;
-    background: #f5f7fa;
   }
   
-  /* === Formulaire === */
+  /* 📦 Carte formulaire */
   .formulaire {
     width: 100%;
-    max-width: 420px;
+    max-width: 420px;   /* desktop */
     background: white;
+  
     padding: 25px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+  
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
   
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
   
-  /* === Titre === */
+  /* 🏷️ Titre */
   .formulaire h1 {
     text-align: center;
-    margin-bottom: 25px;
     font-size: 22px;
     color: #0d3b66;
-    font-weight: bold;
+    margin-bottom: 10px;
   }
   
-  /* === Inputs & textarea === */
+  /* ✏️ Inputs & textarea */
   .formulaire input,
   .formulaire textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
+    padding: 14px;
+    font-size: 16px;
+  
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 16px;
+  
     font-family: inherit;
   }
   
-  .formulaire input:focus,
-  .formulaire textarea:focus {
-    border-color: #0d3b66;
-    outline: none;
+  /* 📝 textarea spécifique */
+  .formulaire textarea {
+    resize: vertical;
+    min-height: 100px;
   }
   
-  /* === Textarea spécifique === */
-  /*.formulaire textarea {
-    resize: vertical;
-    min-height: 90px;
-  }*/
-  
-  /* === Bouton === */
-  .formulaire .button {
+  /* 🔘 Bouton */
+  .form-btn {
     width: 100%;
     padding: 14px;
+  
     background: #0d3b66;
     color: white;
+    font-size: 18px;
+  
     border: none;
     border-radius: 8px;
-    font-size: 18px;
+  
     cursor: pointer;
     transition: 0.3s ease;
   }
   
-  .formulaire .button:hover {
+  .form-btn:hover {
     background: #08355a;
   }
   
-  /* === Message === */
-  .form-message {
-    margin-top: 15px;
-    text-align: center;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* ===========================
-        RESPONSIVE MOBILE
-  =========================== */
+  /* 📱 MOBILE */
   @media (max-width: 480px) {
     .formulaire {
+      max-width: 100%;   /* 🔑 clé du problème */
       padding: 20px;
-    }
-  
-    .formulaire h1 {
-      font-size: 20px;
-    }
-  
-    .formulaire input,
-    .formulaire textarea {
-      font-size: 16px; /* évite zoom iOS */
-    }
-  
-    .formulaire .button {
-      font-size: 16px;
-      padding: 12px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .form-wrapper {
-      padding: 0; /* 🔑 enlève les marges grises */
-    }
-  
-    .formulaire {
-      max-width: 100%;
-      width: 100%;
-      min-height: 100vh; /* optionnel : plein écran */
-      border-radius: 0; /* plein largeur = pas d’arrondi */
-      box-shadow: none; /* look mobile propre */
-      padding: 20px;
+      border-radius: 14px;
     }
   }
   
