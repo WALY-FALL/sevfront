@@ -93,7 +93,7 @@
   /* ✏️ Inputs & textarea */
   .formulaire input,
   .formulaire textarea {
-    width: 100vw;
+    width: 100%;
     padding: 14px;
     font-size: 16px;
   
@@ -132,7 +132,8 @@
   /* 📱 MOBILE */
   @media (max-width: 480px) {
     .formulaire {
-      max-width: 100%;   /* 🔑 clé du problème */
+      /*max-width: 100%; */  /* 🔑 clé du problème */
+      width: 100vw;
       padding: 20px;
       border-radius: 14px;
     }
