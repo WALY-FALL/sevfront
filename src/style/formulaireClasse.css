@@ -104,10 +104,10 @@
   }
   
   /* === Textarea spécifique === */
-  .formulaire textarea {
+  /*.formulaire textarea {
     resize: vertical;
     min-height: 90px;
-  }
+  }*/
   
   /* === Bouton === */
   .formulaire .button {
