@@ -68,7 +68,7 @@
   
   /* 📦 Carte formulaire */
   .formulaire {
-    width: 100%;
+    width: 100vw;
     max-width: 420px;   /* desktop */
     background: white;
   
