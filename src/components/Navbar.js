@@ -70,7 +70,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-
+      {(mobileOpen || window.innerWidth > 768) && (
       <nav className={`navbar ${mobileOpen ? "navbar-open" : ""}`}>
         <li>
           <Link className="li-link" to="/" onClick={() => setMobileOpen(false)}>
@@ -86,7 +86,7 @@ const Navbar = () => {
           <span
             className="li-link dropdown-title"
             onClick={() => {
-              setShowSignupMenu(!showSignupMenu)
+              setShowSignupMenu(!showSignupMenu);
               setShowLoginMenu(false);} // ferme l'autre menu
             }
           >
@@ -100,7 +100,7 @@ const Navbar = () => {
                 className="dropdown-item"
                 onClick={() => {
                   setShowSignupMenu(false);
-                  setMobileOpen(false)}
+                  setMobileOpen(false);}
                 }
               >
                 Élève
@@ -112,7 +112,7 @@ const Navbar = () => {
                 className="dropdown-item"
                 onClick={() => {
                   setShowSignupMenu(false);
-                  setMobileOpen(false)}
+                  setMobileOpen(false);}
                 }
               >
                 Professeur
@@ -143,7 +143,7 @@ const Navbar = () => {
                 className="dropdown-item"
                 onClick={() => {
                   setShowLoginMenu(false);
-                  setMobileOpen(false)}
+                  setMobileOpen(false);}
                 }
               >
                 Élève
@@ -155,7 +155,7 @@ const Navbar = () => {
                 className="dropdown-item"
                 onClick={() => {
                   setShowLoginMenu(false);
-                  setMobileOpen(false)}
+                  setMobileOpen(false);}
                 }
               >
                 Professeur
@@ -164,6 +164,7 @@ const Navbar = () => {
           </ul>
         </li>
       </nav>
+      )}
     </div>
   );
 };
