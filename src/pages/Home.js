@@ -1,6 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import "../style/home.css";
+import photo from "../assets/photo.png";
+import image from "../assets/image.jpeg";
+import yassa from "../assets/yassa.jpeg";
 
 const Home = () => {
 
@@ -19,15 +22,15 @@ const Home = () => {
           <Slider {...settings}>
 
             <div>
-              <img src="photo.png" className="slide-img" />
+              <img src= {photo} className="slide-img" />
             </div>
 
             <div>
-              <img src="image.jpeg" className="slide-img" />
+              <img src= {image} className="slide-img" />
             </div>
 
             <div>
-              <img src="yassa.jpeg" className="slide-img" />
+              <img src= {yassa} className="slide-img" />
             </div>
 
           </Slider>
