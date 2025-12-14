@@ -66,9 +66,9 @@ const Navbar = () => {
 
       {/* === HAMBURGER MOBILE === */}
       <div className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
-        {/*<span></span>
         <span></span>
-        <span></span>*/}
+        <span></span>
+        <span></span>
       </div>
 
       <nav className={`navbar ${mobileOpen ? "navbar-open" : ""}`}>
