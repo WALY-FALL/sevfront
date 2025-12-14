@@ -19,15 +19,15 @@ const Home = () => {
           <Slider {...settings}>
 
             <div>
-              <img src="/img/slide1.jpg" className="slide-img" />
+              <img src="photo.png" className="slide-img" />
             </div>
 
             <div>
-              <img src="/img/slide2.jpg" className="slide-img" />
+              <img src="image.jpeg" className="slide-img" />
             </div>
 
             <div>
-              <img src="/img/slide3.jpg" className="slide-img" />
+              <img src="yassa.jpeg" className="slide-img" />
             </div>
 
           </Slider>
