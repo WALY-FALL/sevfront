@@ -132,8 +132,8 @@
   /* 📱 MOBILE */
   @media (max-width: 480px) {
     .formulaire {
-      /*max-width: 100%; */  /* 🔑 clé du problème */
-      width: 100vw;
+      max-width: 100%;  /* 🔑 clé du problème */
+     /* width: 100vw;*/
       padding: 20px;
       border-radius: 14px;
     }
