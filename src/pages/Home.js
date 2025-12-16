@@ -1,6 +1,6 @@
 import React from "react";
 //import Slider from "react-slick";
-import "../style/home.css";
+//import "../style/home.css";
 import photo from "../assets/photo.png";
 import image from "../assets/image.jpeg";
 import yassa from "../assets/yassa.jpeg";
