@@ -11,7 +11,7 @@ body{
 }
 
 .container-navbar{
-    height: 150px;
+    height: 160px;
     display: flex;
     align-items: center;
     border-bottom: solid;
