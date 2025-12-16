@@ -1,9 +1,9 @@
 import React from "react";
-//import Slider from "react-slick";
-//import "../style/home.css";
+import Slider from "react-slick";
+import "../style/home.css";
 import photo from "../assets/photo.png";
-import image from "../assets/image.jpeg";
-import yassa from "../assets/yassa.jpeg";
+import image from "../assets/image.jpg";
+import yassa from "../assets/yassa.jpg";
 
 const Home = () => {
 
@@ -19,7 +19,7 @@ const Home = () => {
     <div className="">
         <div className="div-home">
 
-          {/*<Slider {...settings}>
+          <Slider {...settings}>
 
             <div>
               <img src= {photo} className="slide-img" />
@@ -33,11 +33,8 @@ const Home = () => {
               <img src= {yassa} className="slide-img" />
             </div>
 
-  </Slider>*/}
-  <div style={{ height: "300px", background: "red" }}>
-  TEST
-</div>
-
+  </Slider>
+ 
         </div>
       </div>
 
