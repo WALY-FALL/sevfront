@@ -19,7 +19,7 @@ const Home = () => {
     <div className="">
         <div className="div-home">
 
-          <Slider {...settings}>
+          {/*<Slider {...settings}>
 
             <div>
               <img src= {photo} className="slide-img" />
@@ -33,8 +33,10 @@ const Home = () => {
               <img src= {yassa} className="slide-img" />
             </div>
 
-          </Slider>
-  
+  </Slider>*/}
+  <div style={{ height: "300px", background: "red" }}>
+  TEST
+</div>
 
         </div>
       </div>
