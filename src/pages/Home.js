@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import "../style/home.css";
-import photo from "../assets/photo.png";
 import image from "../assets/image.jpg";
+import photo from "../assets/photo.png";
 import yassa from "../assets/yassa.jpg";
 
 const Home = () => {
