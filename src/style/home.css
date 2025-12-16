@@ -16,6 +16,10 @@
     object-fit: cover;     /* garde une belle image */
   }
   
+  .slide-img {
+    background: red;
+  }
+  
   /* MOBILE */
   @media (max-width: 768px) {
     .slide-img {
