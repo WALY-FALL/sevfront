@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "../style/home.css";
 import image from "../assets/image.jpg";
-import image from "../assets/image.jpg";
+//import image from "../assets/image.jpg";
 import image1 from "../assets/image1.jpg";
 
 const Home = () => {
