@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "../style/home.css";
 import image from "../assets/image.jpg";
 import photo from "../assets/photo.png";
-import yassa from "../assets/yassa.jpg";
+import image1 from "../assets/image1.jpg";
 
 const Home = () => {
 
@@ -30,7 +30,7 @@ const Home = () => {
             </div>
 
             <div>
-              <img src= {yassa} className="slide-img" />
+              <img src= {image1} className="slide-img" />
             </div>
 
   </Slider>
