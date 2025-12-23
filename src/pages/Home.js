@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "../style/home.css";
-import image from "../assets/image.jpg";
+import image1 from "../assets/image1.jpg";
 import photo1 from "../assets/photo1.jpg";
 import pwf from "../assets/pwf.jpg";
 
@@ -22,7 +22,7 @@ const Home = () => {
           <Slider {...settings}>
 
             <div>
-              <img src= {image} className="slide-img" />
+              <img src= {image1} className="slide-img" />
             </div>
 
             <div>
