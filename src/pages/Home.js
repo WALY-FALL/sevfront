@@ -22,15 +22,15 @@ const Home = () => {
           <Slider {...settings}>
 
             <div>
-              <img src= {photo} className="slide-img" />
-            </div>
-
-            <div>
               <img src= {image} className="slide-img" />
             </div>
 
             <div>
               <img src= {image1} className="slide-img" />
+            </div>
+
+            <div>
+              <img src= {image} className="slide-img" />
             </div>
 
   </Slider>
