@@ -17,9 +17,9 @@ const Home = () => {
   return(
 
     <div className="">
-        {/*<div className="div-home">
+        <div className="div-home">
 
-          <Slider {...settings}>
+          {/*<Slider {...settings}>
 
             <div>
               <img src= {image1} className="slide-img" />
@@ -33,9 +33,9 @@ const Home = () => {
               <img src= {photo1} className="slide-img" />
             </div>
 
-  </Slider>
+  </Slider>*/}
  
-  </div>*/}
+  </div>
       </div>
 
   );
