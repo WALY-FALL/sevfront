@@ -16,8 +16,8 @@ const Home = () => {
   };
   return(
 
-    <div className="carousel">
-        <div className="div-home">
+    <div className="">
+        {/*<div className="div-home">
 
           <Slider {...settings}>
 
@@ -35,7 +35,7 @@ const Home = () => {
 
   </Slider>
  
-        </div>
+  </div>*/}
       </div>
 
   );
