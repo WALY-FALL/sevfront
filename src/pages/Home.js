@@ -16,7 +16,7 @@ const Home = () => {
   };
   return(
 
-    <div className="">
+    <div className="carousel">
         <div className="div-home">
 
           <Slider {...settings}>
