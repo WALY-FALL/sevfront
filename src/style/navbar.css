@@ -19,6 +19,8 @@ html, body {
   padding: 15px 25px;
   background: #0d3b66;
   color: white;
+  position: relative;   /* 🔑 nécessaire */
+  z-index: 3000;        /* 🔑 au-dessus du carousel */
 }
 
 .container-logo {
@@ -31,6 +33,7 @@ html, body {
   display: flex;
   align-items: center;
   gap: 20px;
+  z-index: 4000; /* 🔥 encore plus haut */
 }
 
 .li-link {
