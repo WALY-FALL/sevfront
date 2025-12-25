@@ -44,7 +44,7 @@ body{
 
 .div-home{
     height: 500px;
-    /*background: linear-gradient(to left, #2193b0, #6dd5ed);*/
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
 }
 .signup{
     display: flex;
