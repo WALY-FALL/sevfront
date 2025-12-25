@@ -135,6 +135,7 @@ html, body {
     position: relative;
     background: #fff;
     border-radius: 5px;
+    z-index: 2000;
   }
 }
 
