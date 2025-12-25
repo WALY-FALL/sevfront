@@ -70,7 +70,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      {(mobileOpen || window.innerWidth > 768) && (
+      {/*{(mobileOpen || window.innerWidth > 768) && (*/}
       <nav className={`navbar ${mobileOpen ? "navbar-open" : ""}`}>
         <li>
           <Link className="li-link" to="/" onClick={() => setMobileOpen(false)}>
@@ -164,7 +164,7 @@ const Navbar = () => {
           </ul>
         </li>
       </nav>
-      )}
+      {/*)}*/}
     </div>
   );
 };
