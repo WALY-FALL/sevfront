@@ -1,7 +1,7 @@
 import React from "react";
 //import Slider from "react-slick";
-/*import "../style/home.css";
-import "./App.css";*/
+import "../style/home.css";
+/*import "./App.css";*/
 //import image1 from "../assets/image1.jpg";
 //import photo1 from "../assets/photo1.jpeg";
 //import pwf from "../assets/pwf.jpg";
@@ -18,9 +18,9 @@ const Home = () => {
   return(
 
      <div className="">
-        {/* <div className="div-home">
+         <div className="div-home">
 
-        <Slider {...settings}>
+       {/* <Slider {...settings}>
 
             <div>
               <img src= {image1} className="slide-img" />
@@ -34,9 +34,9 @@ const Home = () => {
               <img src= {photo1} className="slide-img" />
             </div>
 
-  </Slider>
+  </Slider>*/}
  
-  </div>*/}
+  </div>
       </div>
 
   );
