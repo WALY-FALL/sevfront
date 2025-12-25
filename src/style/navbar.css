@@ -140,6 +140,12 @@ html, body {
   }
 }
 
+.dropdown {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+
 /*@media (max-width: 768px) {
 
   .hamburger {
