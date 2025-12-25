@@ -1,10 +1,15 @@
   .div-home {
     width: 100%;
     max-width: 100%;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
     /*overflow: hidden;*/
 
   }
   
+  /*.div-home{
+    height: 500px;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+}*/
   /* CONTENEUR SLIDER */
   .div-home .slick-slider {
     width: 100%;
