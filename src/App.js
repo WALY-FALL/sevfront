@@ -31,7 +31,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Pages publiques avec layout
+        {/* Pages publiques avec layout*/}
         <Route
           path="/"
           element={
@@ -39,7 +39,7 @@ function App() {
               <Home />
             </PublicLayout>
           }
-        /> */}
+        /> 
 
         <Route path="/signup-eleve" element={  <PublicLayout><SignupEleve /></PublicLayout>} />
         <Route path="/signup-prof" element={ <PublicLayout><SignupProf /></PublicLayout>} />
