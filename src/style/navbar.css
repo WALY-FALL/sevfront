@@ -132,7 +132,8 @@ html, body {
 
   /* dropdown en mode mobile */
   .dropdown-menu {
-    position: relative;
+    /*position: relative;*/
+    position: fixed;
     background: #fff;
     border-radius: 5px;
     z-index: 2000;
