@@ -1,7 +1,7 @@
 import React from "react";
 //import Slider from "react-slick";
-import "../style/home.css";
-import "./App.css";
+/*import "../style/home.css";
+import "./App.css";*/
 //import image1 from "../assets/image1.jpg";
 //import photo1 from "../assets/photo1.jpeg";
 //import pwf from "../assets/pwf.jpg";
