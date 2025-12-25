@@ -141,12 +141,10 @@ html, body {
 }
 
 .dropdown {
-  /*position: relative;*/
-  position: fixed;
+  position: relative;
   list-style: none;
   cursor: pointer;
   border-radius: 5px;
-  z-index: 2000;
 }
 
 /*@media (max-width: 768px) {
