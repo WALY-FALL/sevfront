@@ -36,7 +36,7 @@ function App() {
           path="/"
           element={
             <PublicLayout>
-              {/*<Home />*/}
+              <Home />
             </PublicLayout>
           }
         /> 
