@@ -20,7 +20,7 @@ html, body {
   background: #0d3b66;
   color: white;
   position: relative;   /* 🔑 nécessaire */
-  z-index: 3000;        /* 🔑 au-dessus du carousel */
+  /*z-index: 3000;  */      /* 🔑 au-dessus du carousel */
 
 }
 
