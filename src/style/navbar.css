@@ -21,7 +21,7 @@ html, body {
   color: white;
   position: relative;   /* 🔑 nécessaire */
   z-index: 3000;        /* 🔑 au-dessus du carousel */
-  height: 500px;
+ 
 }
 
 .container-logo {
