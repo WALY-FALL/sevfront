@@ -14,9 +14,9 @@
     .container-fouteur {
       flex-direction: column;     /* 🔥 en colonne */
       justify-content: center;    /* centre verticalement */
-     /* gap: 5px;    */              /* espace entre les éléments */
+      gap: 5px;               /* espace entre les éléments */
       height: auto;               /* 🔑 évite le scroll */
-      /*padding: 5px 0;*/
+      /*padding: 15px 0;*/
       text-align: center;
     }
 
