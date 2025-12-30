@@ -14,6 +14,7 @@ import ListeEleves from "./components/ListeEleves";
 import "./App.css";
 import ClasseDetail from "./pages/ClasseDetail"; // ⚡ à créer
 import EleveDashboard from "./components/EleveDashboard";
+import Fouteur from "./components/Fouteur";
 
 
 // Layout public (avec Entete + Navbar)
@@ -22,6 +23,7 @@ function PublicLayout({ children }) {
     <>
       <Entete />
       <Navbar />
+      <Fouteur />
       {children}
     </>
   );
