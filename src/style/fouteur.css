@@ -19,4 +19,9 @@
       /*padding: 5px 0;*/
       text-align: center;
     }
+
+    .container-fouteur p{
+        margin: 0;
+
+    }
   }
