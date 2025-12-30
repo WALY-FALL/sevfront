@@ -122,6 +122,7 @@ html, body {
     padding: 20px;
     gap: 15px;
     border-radius: 10px 0 0 10px;
+    z-index: 3000; 
 
     /* 🔑 IMPORTANT */
     transform: translateX(100%);
