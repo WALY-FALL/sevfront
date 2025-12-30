@@ -1,4 +1,4 @@
-
+import "../styles/fouteur.css";
 
 const Fouteur = () => {
   return (
