@@ -51,6 +51,10 @@ import "../style/navbar.css";
 export default Navbar;*/
 
 
+useEffect(() => {
+  document.body.style.overflow = mobileOpen ? "hidden" : "auto";
+}, [mobileOpen]);
+
 
 const Navbar = () => {
   const [showSignupMenu, setShowSignupMenu] = useState(false);
