@@ -9,3 +9,14 @@
     justify-content: space-around;
     
 }
+
+@media (max-width: 768px) {
+    .container-fouteur {
+      flex-direction: column;     /* 🔥 en colonne */
+      justify-content: center;    /* centre verticalement */
+      gap: 10px;                  /* espace entre les éléments */
+      height: auto;               /* 🔑 évite le scroll */
+      padding: 15px 0;
+      text-align: center;
+    }
+  }
