@@ -2,6 +2,8 @@
 
     background: #0d3b66;
     color: white;
-    height: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center;
     
 }
