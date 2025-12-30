@@ -112,20 +112,26 @@ html, body {
   }
 
   .navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 200px;
-    height: 100vh;
+    position: fixed;          /* 🔥 SORT DU FLUX */
+    top: 70px;                /* juste sous la barre */
+    right: 0;
+    width: 220px;
     background: #0d3b66;
+
+    display: flex;
     flex-direction: column;
-    padding: 70px 20px 20px 20px;
+    padding: 20px;
     gap: 15px;
-    transition: 0.3s ease;
     border-radius: 10px 0 0 10px;
-    z-index: 1500;   /* 🔥 au-dessus du container */
+
+    z-index: 9000;            /* 🔥 AU-DESSUS DU SLIDE */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
 
+  .navbar-open {
+    transform: translateX(0);
+  }
 
   /* dropdown en mode mobile */
   .dropdown-menu {
