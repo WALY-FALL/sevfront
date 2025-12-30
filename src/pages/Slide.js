@@ -1,10 +1,9 @@
 import React from "react";
-//import Slider from "react-slick";
+import Slider from "react-slick";
 import "../style/slide.css";
-/*import "./App.css";*/
-//import image1 from "../assets/image1.jpg";
-//import photo1 from "../assets/photo1.jpeg";
-//import pwf from "../assets/pwf.jpg";
+import image1 from "../assets/image1.jpg";
+import photo1 from "../assets/photo1.jpeg";
+import pwf from "../assets/pwf.jpg";
 
 const Slide = () => {
 
@@ -20,7 +19,7 @@ const Slide = () => {
      <div className="">
          <div className="div-slide">
 
-       {/* <Slider {...settings}>
+       <Slider {...settings}>
 
             <div>
               <img src= {image1} className="slide-img" />
@@ -34,7 +33,7 @@ const Slide = () => {
               <img src= {photo1} className="slide-img" />
             </div>
 
-  </Slider>*/}
+  </Slider>
  
   </div>
       </div>
