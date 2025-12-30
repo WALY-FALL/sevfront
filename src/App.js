@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";//BrowserRouter: conteneur principal qui active la navigation. Il gére les URL du navigateur
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Home from "./pages/Slide";
 import Espaceprofs from "./pages/Espaceprofs";
 import Entete from "./components/Entete";
 import { SignupEleve, LoginEleve } from "./pages/AuthEleve";
@@ -36,7 +36,7 @@ function App() {
           path="/"
           element={
             <PublicLayout>
-            {/*  <Home />*/}
+              <Slide/>
             </PublicLayout>
           }
         /> 
