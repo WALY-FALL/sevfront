@@ -17,7 +17,8 @@ const Slide = () => {
   return(
 
      <div className="">
-         <div className="div-slide">
+         {/*</div><div className="div-slide">*/}
+         <div className="">
 
        <Slider {...settings}>
 
