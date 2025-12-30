@@ -16,7 +16,7 @@
       justify-content: center;    /* centre verticalement */
      /* gap: 5px;    */              /* espace entre les éléments */
       height: auto;               /* 🔑 évite le scroll */
-      padding: 15px 0;
+      padding: 5px 0;
       text-align: center;
     }
   }
