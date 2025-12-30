@@ -51,9 +51,9 @@ import "../style/navbar.css";
 export default Navbar;*/
 
 
-useEffect(() => {
+/*useEffect(() => {
   document.body.style.overflow = mobileOpen ? "hidden" : "auto";
-}, [mobileOpen]);
+}, [mobileOpen]);*/
 
 
 const Navbar = () => {
