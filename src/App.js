@@ -23,7 +23,6 @@ function PublicLayout({ children }) {
     <>
       <Entete />
       <Navbar />
-      <Fouteur />
       {children}
     </>
   );
