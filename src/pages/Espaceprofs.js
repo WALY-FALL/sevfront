@@ -51,7 +51,7 @@ const Espaceprofs = () => {
   };
 
   // 🔹 Supprimer une classe
-  const handleDelete = async (id) => {
+  const handleDeleteClasse = async (id) => {
     try {
       await axios.delete(`${API_URL}/classes/delete/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
@@ -315,7 +315,7 @@ const Espaceprofs = () => {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        handleDelete(classe._id);
+                        handleDeleteClasse(classe._id);
                       }}
                     >
                       Supprimer
