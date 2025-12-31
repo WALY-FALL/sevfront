@@ -166,6 +166,70 @@ const Espaceprofs = () => {
 
               {/* Liste des cours */}
               <div>
+  <h3>📚 Cours de la classe</h3>
+  {coursClasse.length === 0 ? (
+    <p>Aucun cours pour le moment.</p>
+  ) : (
+    <ul style={{ listStyle: "none", padding: 0, display: "flex", flexWrap: "wrap", gap: "20px" }}>
+      {coursClasse.map((c) => (
+        <li
+          key={c._id}
+          style={{
+            backgroundColor: "#fff",
+            border: "1px solid #ddd",
+            borderRadius: "10px",
+            boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+            padding: "15px",
+            flex: "1 1 250px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            position: "relative",
+          }}
+        >
+          <div>
+            <strong style={{ fontSize: "16px", color: "#007bff" }}>{c.titre}</strong>
+            <p style={{ margin: "8px 0", color: "#333" }}>{c.contenu}</p>
+          </div>
+
+          {c.fichiers && c.fichiers.length > 0 && (
+            <div>
+              {c.fichiers.map((f, i) => (
+                <a
+                  key={i}
+                  href={f.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "block", marginBottom: "5px", color: "#007bff", textDecoration: "none" }}
+                >
+                  📎 {f.nom || "Ouvrir le fichier"}
+                </a>
+              ))}
+            </div>
+          )}
+
+          {/* Bouton Supprimer */}
+          <button
+            onClick={() => handleDelete(c._id)}
+            style={{
+              marginTop: "10px",
+              backgroundColor: "#dc3545",
+              color: "#fff",
+              border: "none",
+              padding: "6px 10px",
+              borderRadius: "6px",
+              cursor: "pointer",
+            }}
+          >
+            🗑 Supprimer
+          </button>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+
+         {/* <div>
                 <h3>📚 Cours de la classe</h3>
                 {coursClasse.length === 0 ? (
                   <p>Aucun cours pour le moment.</p>
@@ -185,7 +249,7 @@ const Espaceprofs = () => {
                     ))}
                   </ul>
                 )}
-              </div>
+              </div>*/}
 
               {/* Formulaire poster un cours */}
               {showUploadForm && selectedClasse && (
