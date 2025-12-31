@@ -170,7 +170,15 @@ const Espaceprofs = () => {
   {coursClasse.length === 0 ? (
     <p>Aucun cours pour le moment.</p>
   ) : (
-    <ul style={{ listStyle: "none", padding: 0, display: "flex", flexWrap: "wrap", gap: "20px" }}>
+    <ul
+      style={{
+        listStyle: "none",
+        padding: 0,
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "15px",
+      }}
+    >
       {coursClasse.map((c) => (
         <li
           key={c._id}
@@ -179,8 +187,9 @@ const Espaceprofs = () => {
             border: "1px solid #ddd",
             borderRadius: "10px",
             boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-            padding: "15px",
-            flex: "1 1 250px",
+            padding: "12px",
+            flex: "1 1 180px", // largeur réduite pour plusieurs cartes sur la ligne
+            maxWidth: "180px",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
@@ -188,8 +197,8 @@ const Espaceprofs = () => {
           }}
         >
           <div>
-            <strong style={{ fontSize: "16px", color: "#007bff" }}>{c.titre}</strong>
-            <p style={{ margin: "8px 0", color: "#333" }}>{c.contenu}</p>
+            <strong style={{ fontSize: "14px", color: "#007bff" }}>{c.titre}</strong>
+            <p style={{ margin: "6px 0", color: "#333", fontSize: "13px" }}>{c.contenu}</p>
           </div>
 
           {c.fichiers && c.fichiers.length > 0 && (
@@ -200,7 +209,13 @@ const Espaceprofs = () => {
                   href={f.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ display: "block", marginBottom: "5px", color: "#007bff", textDecoration: "none" }}
+                  style={{
+                    display: "block",
+                    marginBottom: "4px",
+                    color: "#007bff",
+                    fontSize: "12px",
+                    textDecoration: "none",
+                  }}
                 >
                   📎 {f.nom || "Ouvrir le fichier"}
                 </a>
@@ -208,17 +223,17 @@ const Espaceprofs = () => {
             </div>
           )}
 
-          {/* Bouton Supprimer */}
           <button
             onClick={() => handleDelete(c._id)}
             style={{
-              marginTop: "10px",
+              marginTop: "8px",
               backgroundColor: "#dc3545",
               color: "#fff",
               border: "none",
-              padding: "6px 10px",
-              borderRadius: "6px",
+              padding: "5px 8px",
+              borderRadius: "5px",
               cursor: "pointer",
+              fontSize: "12px",
             }}
           >
             🗑 Supprimer
