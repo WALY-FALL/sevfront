@@ -123,7 +123,7 @@ useEffect(() => {
       }
     } catch (err) {
       console.error("Erreur lors de la demande d'accès :", err);
-      alert("Erreur serveur lors de la demande d'accès.");
+      alert("Une seule classe par professeur.");
     }
   };
   
