@@ -44,6 +44,7 @@ const FormulaireClasse=({ onClassCreated })=>{
       <h2 className="signup-title">Classe</h2>
 
       <input 
+      className="signup-input"
         type="text"
         placeholder="Série"
         value={serie}
@@ -52,6 +53,7 @@ const FormulaireClasse=({ onClassCreated })=>{
       />
 
       <input 
+      className="signup-input"
        type="text"
        placeholder="Niveau"
        value={niveau}
