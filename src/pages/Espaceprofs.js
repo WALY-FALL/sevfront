@@ -372,8 +372,8 @@ const Espaceprofs = () => {
       fontSize: "12px",
       borderRadius: "4px",
       border: "none",
-      backgroundColor: "#dc3545",
-      color: "#fff",
+      //backgroundColor: "#dc3545",
+      //color: "#fff",
       cursor: "pointer",
     }}
   >
