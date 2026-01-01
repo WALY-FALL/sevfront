@@ -328,7 +328,6 @@ const Espaceprofs = () => {
                     boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
                     backgroundColor: "#fff",
                     cursor: "pointer",
-
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between", // 🔑
@@ -348,7 +347,7 @@ const Espaceprofs = () => {
                       cursor: "pointer",
                     }}*/
                   >
-                    <h4 style={{ display: "flex", gap: "15px" }}>
+                    <h4 style={{ display: "flex", gap: "5px" }}>
                       <p>{classe.niveau}</p>
                       <p>{classe.serie}</p>
                     </h4>
