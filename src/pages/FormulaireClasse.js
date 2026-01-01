@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../style/formulaireClasse.css";
+//import "../style/formulaireClasse.css";
+import "../style/signup.css";
 
 
 
@@ -37,7 +38,34 @@ const FormulaireClasse=({ onClassCreated })=>{
   };
   
   return (
-    <div className="form-wrapper">
+
+    <div className="signup-container">
+    <form className="signup-form" onSubmit={handleSubmit}>
+      <h2 className="signup-title">Inscription Professeur</h2>
+
+      <input className="signup-input" type="text" name="nom" placeholder="Nom"
+        value={formData.nom} onChange={handleChange} required />
+
+      <input className="signup-input" type="text" name="prenom" placeholder="Prénom"
+        value={formData.prenom} onChange={handleChange} required />
+
+      <input className="signup-input" type="email" name="email" placeholder="Email"
+        value={formData.email} onChange={handleChange} required />
+
+      <input className="signup-input" type="password" name="password" placeholder="Mot de passe"
+        value={formData.password} onChange={handleChange} required />
+
+      <input className="signup-input" type="text" name="matiere" placeholder="Matière"
+        value={formData.matiere} onChange={handleChange} required />
+
+      <button className="signup-btn" type="submit">
+        <strong>Créer votre espace SEV</strong>
+      </button>
+    </form>
+
+    {message && <p className="signup-message">{message}</p>}
+  </div>
+    /*<div className="form-wrapper">
       <form className="formulaire" onSubmit={handleSubmit}>
         <h1>Classe</h1>
   
@@ -70,7 +98,7 @@ const FormulaireClasse=({ onClassCreated })=>{
       </form>
   
       {message && <p className="error">{message}</p>}
-    </div>
+    </div>*/
   );
   
 
