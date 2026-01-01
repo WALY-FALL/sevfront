@@ -286,27 +286,6 @@ const Espaceprofs = () => {
   )}
 </div>
 
-         {/* <div>
-                <h3>📚 Cours de la classe</h3>
-                {coursClasse.length === 0 ? (
-                  <p>Aucun cours pour le moment.</p>
-                ) : (
-                  <ul>
-                    {coursClasse.map((c) => (
-                      <li key={c._id}>
-                        <strong>{c.titre}</strong> - {c.contenu}
-                        {c.fichiers && c.fichiers.length > 0 && (
-                          <div>
-                            <a href={c.fichiers[0].url} target="_blank" rel="noopener noreferrer">
-                              {c.fichiers[0].nom}
-                            </a>
-                          </div>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>*/}
 
               {/* Formulaire poster un cours */}
               {showUploadForm && selectedClasse && (
@@ -335,8 +314,28 @@ const Espaceprofs = () => {
             ) : (
               <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
                 {classes.map((classe) => (
+                  
                   <div
+
                     key={classe._id}
+                    onClick={() => handleSelectClasse(classe)}
+                    style={{
+                    border: "1px solid #ddd",
+                    borderRadius: "8px",
+                    padding: "16px",
+                    width: "200px",
+                    height: "150px",
+                    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                    backgroundColor: "#fff",
+                    cursor: "pointer",
+
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between", // 🔑
+                    overflow: "hidden",              // 🔑
+                    }}
+                  
+                    /*key={classe._id}
                     onClick={() => handleSelectClasse(classe)}
                     style={{
                       border: "1px solid #ddd",
@@ -347,7 +346,7 @@ const Espaceprofs = () => {
                       boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
                       backgroundColor: "#fff",
                       cursor: "pointer",
-                    }}
+                    }}*/
                   >
                     <h4 style={{ display: "flex", gap: "15px" }}>
                       <p>{classe.niveau}</p>
