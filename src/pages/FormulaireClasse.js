@@ -41,16 +41,30 @@ const FormulaireClasse=({ onClassCreated })=>{
 
     <div className="signup-container">
     <form className="signup-form" onSubmit={handleSubmit}>
-      <h2 className="signup-title">Inscription Professeur</h2>
+      <h2 className="signup-title">Classe</h2>
 
-      <input className="signup-input" type="text" name="nom" placeholder="Nom"
-        value={formData.nom} onChange={handleChange} required />
+      <input 
+        type="text"
+        placeholder="Série"
+        value={serie}
+        onChange={(e) => setSerie(e.target.value)}
+        required
+      />
 
-      <input className="signup-input" type="text" name="prenom" placeholder="Prénom"
-        value={formData.prenom} onChange={handleChange} required />
+      <input 
+       type="text"
+       placeholder="Niveau"
+       value={niveau}
+       onChange={(e) => setNiveau(e.target.value)}
+       required
+      />
 
-      <input className="signup-input" type="email" name="email" placeholder="Email"
-        value={formData.email} onChange={handleChange} required />
+      <textarea
+          placeholder="Description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          required
+      />
 
       <input className="signup-input" type="password" name="password" placeholder="Mot de passe"
         value={formData.password} onChange={handleChange} required />
@@ -59,7 +73,7 @@ const FormulaireClasse=({ onClassCreated })=>{
         value={formData.matiere} onChange={handleChange} required />
 
       <button className="signup-btn" type="submit">
-        <strong>Créer votre espace SEV</strong>
+        <strong> Créer la classe</strong>
       </button>
     </form>
 
