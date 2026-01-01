@@ -1,141 +1,90 @@
-/* Conteneur global */
-/*.form-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }*/
-  
-  /* Formulaire */
-  /*.formulaire {
-    width: 100%;
-    max-width: 420px; 
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }*/
-  
-  /* Titre */
-  /*.formulaire h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }*/
-  
-  /* Inputs & textarea */
-  /*.formulaire input,
-  .formulaire textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-family: inherit;
-  }*/
-  
-  /* Textarea spécifique */
-  /*.formulaire textarea {
-    resize: vertical;
-    min-height: 80px;
-  }*/
-  
-  /* Message erreur */
-  /*.error {
-    margin-top: 10px;
-    color: red;
-    text-align: center;
-  }*/
-  /* ======================
-   RESET / SÉCURITÉ
-====================== */
 /* === Container général === */
-/* 🌫️ Fond gris pleine page */
-.form-wrapper {
-    /*width: 100%;*/
-    width: 100%;
-    min-height: 100vh;
-    background: #f0f2f5;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+.formulaire-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+/* === Formulaire === */
+.formulaire-form {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.formulaire-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #0d3b66;
+  font-weight: bold;
+}
+
+/* === Inputs === */
+.formulaire-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.formulaire-input:focus {
+  border-color: #0d3b66;
+  outline: none;
+}
+
+/* === Bouton === */
+.formulaire-btn {
+  width: 100%;
+  padding: 14px;
+  background: #0d3b66;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.formulaire-btn:hover {
+  background: #08355a;
+}
+
+/* === Message === */
+.formulaire-message {
+  margin-top: 15px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* ===========================
+      RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 480px) {
+  .formulaire-form {
     padding: 20px;
   }
-  
-  /* 📦 Carte formulaire */
-  .formulaire {
-    width: 100%;
-    max-width: 420px;   /* desktop */
-    background: white;
-  
-    padding: 25px 30px;
-    border-radius: 12px;
-  
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-  
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+  .formulaire-title {
+    font-size: 20px;
   }
-  
-  /* 🏷️ Titre */
-  .formulaire h1 {
-    text-align: center;
-    font-size: 22px;
-    color: #0d3b66;
-    margin-bottom: 10px;
+
+  .formulaire-input {
+    font-size: 15px;
   }
-  
-  /* ✏️ Inputs & textarea */
-  .formulaire input,
-  .formulaire textarea {
-    width: 100%;
-    padding: 14px;
+
+  .formulaire-btn {
     font-size: 16px;
-  
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  
-    font-family: inherit;
+    padding: 12px;
   }
-  
-  /* 📝 textarea spécifique */
-  .formulaire textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  /* 🔘 Bouton */
-  .form-btn {
-    width: 100%;
-    padding: 14px;
-  
-    background: #0d3b66;
-    color: white;
-    font-size: 18px;
-  
-    border: none;
-    border-radius: 8px;
-  
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  .form-btn:hover {
-    background: #08355a;
-  }
-  
-  /* 📱 MOBILE */
-  @media (max-width: 480px) {
-    .formulaire {
-      max-width: 100%;  /* 🔑 clé du problème */
-     /* width: 100vw;*/
-      padding: 20px;
-      border-radius: 14px;
-    }
-  }
-  
+}

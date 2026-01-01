@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-//import "../style/formulaireClasse.css";
-import "../style/signup.css";
+import "../style/formulaireClasse.css";
 
 
 
@@ -39,12 +38,12 @@ const FormulaireClasse=({ onClassCreated })=>{
   
   return (
 
-    <div className="signup-container">
-    <form className="signup-form" onSubmit={handleSubmit}>
-      <h2 className="signup-title">Classe</h2>
+    <div className="formulaire-container">
+    <form className="formulaire-form" onSubmit={handleSubmit}>
+      <h2 className="formulaire-title">Classe</h2>
 
       <input 
-      className="signup-input"
+      className="formulaire-input"
         type="text"
         placeholder="Série"
         value={serie}
@@ -53,7 +52,7 @@ const FormulaireClasse=({ onClassCreated })=>{
       />
 
       <input 
-      className="signup-input"
+      className="fromulaire-input"
        type="text"
        placeholder="Niveau"
        value={niveau}
@@ -68,12 +67,12 @@ const FormulaireClasse=({ onClassCreated })=>{
           required
       />
 
-      <button className="signup-btn" type="submit">
+      <button className="formulaire-btn" type="submit">
         <strong> Créer la classe</strong>
       </button>
     </form>
 
-    {message && <p className="signup-message">{message}</p>}
+    {message && <p className="formulaire-message">{message}</p>}
   </div>
     /*<div className="form-wrapper">
       <form className="formulaire" onSubmit={handleSubmit}>
