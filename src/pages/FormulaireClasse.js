@@ -66,7 +66,7 @@ const FormulaireClasse=({ onClassCreated })=>{
           onChange={(e) => setDescription(e.target.value)}
           required
       />
-
+<br></br>
       <button className="formulaire-btn" type="submit">
         <strong> Créer la classe</strong>
       </button>
