@@ -256,7 +256,7 @@ const Espaceprofs = () => {
             style={{
               marginTop: "8px",
               /*backgroundColor: "#dc3545",*/
-              color: "#fff",
+              /*color: "#fff",*/
               border: "none",
               padding: "5px 8px",
               borderRadius: "5px",
