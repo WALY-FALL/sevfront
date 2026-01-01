@@ -316,51 +316,73 @@ const Espaceprofs = () => {
                 {classes.map((classe) => (
                   
                   <div
+  key={classe._id}
+  onClick={() => handleSelectClasse(classe)}
+  style={{
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    padding: "12px",
+    width: "200px",
+    height: "150px",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+    backgroundColor: "#fff",
+    cursor: "pointer",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    overflow: "hidden",
+  }}
+>
+  <h4
+    style={{
+      display: "flex",
+      gap: "6px",
+      margin: 0,
+      whiteSpace: "nowrap",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+    }}
+  >
+    <span>{classe.niveau}</span>
+    <span>{classe.serie}</span>
+  </h4>
 
-                    key={classe._id}
-                    onClick={() => handleSelectClasse(classe)}
-                    style={{
-                    border: "1px solid #ddd",
-                    borderRadius: "8px",
-                    padding: "16px",
-                    width: "200px",
-                    height: "150px",
-                    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-                    backgroundColor: "#fff",
-                    cursor: "pointer",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between", // 🔑
-                    overflow: "hidden",              // 🔑
-                    }}
+  <p
+    style={{
+      margin: "6px 0",
+      fontSize: "13px",
+      lineHeight: "1.3",
+      display: "-webkit-box",
+      WebkitLineClamp: 2,
+      WebkitBoxOrient: "vertical",
+      overflow: "hidden",
+    }}
+  >
+    {classe.description}
+  </p>
+
+  <button
+    onClick={(e) => {
+      e.stopPropagation();
+      handleDeleteClasse(classe._id);
+    }}
+    style={{
+      alignSelf: "flex-end",
+      padding: "6px 10px",
+      fontSize: "12px",
+      borderRadius: "4px",
+      border: "none",
+      backgroundColor: "#dc3545",
+      color: "#fff",
+      cursor: "pointer",
+    }}
+  >
+    Supprimer
+  </button>
+</div>
+
+
                   
-                    /*key={classe._id}
-                    onClick={() => handleSelectClasse(classe)}
-                    style={{
-                      border: "1px solid #ddd",
-                      borderRadius: "8px",
-                      padding: "16px",
-                      width: "200px",
-                      height: "150px",
-                      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-                      backgroundColor: "#fff",
-                      cursor: "pointer",
-                    }}*/
-                  >
-                    <h4 style={{ display: "flex", gap: "5px" }}>
-                      <p>{classe.niveau}</p>
-                      <p>{classe.serie}</p>
-                    </h4>
-                    <p>{classe.description}</p>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleDeleteClasse(classe._id);
-                      }}
-                    >
-                      Supprimer
-                    </button>
-                  </div>
                 ))}
               </div>
             )}
