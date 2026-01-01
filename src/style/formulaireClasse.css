@@ -55,8 +55,8 @@
 /* 🌫️ Fond gris pleine page */
 .form-wrapper {
     /*width: 100%;*/
-    width: 50vw;
-    min-height: 50vh;
+    width: 100%;
+    min-height: 100vh;
     background: #f0f2f5;
   
     display: flex;
