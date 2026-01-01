@@ -245,7 +245,21 @@ const Espaceprofs = () => {
                     textDecoration: "none",
                   }}
                 >
-                  📎 {f.nom || "Ouvrir le fichier"}
+                  <span
+  title={f.nom} // 👈 nom complet au survol
+  style={{
+    display: "inline-block",
+    maxWidth: "180px",      // 🔑 ajuste selon ta carte
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    verticalAlign: "middle",
+  }}
+>
+  📎 {f.nom || "Ouvrir le fichier"}
+</span>
+
+                  {/*📎 {f.nom || "Ouvrir le fichier"}*/}
                 </a>
               ))}
             </div>
