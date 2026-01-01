@@ -1,6 +1,7 @@
 /* === Container général === */
 .formulaire-container {
   width: 50%;
+  height: 400px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
