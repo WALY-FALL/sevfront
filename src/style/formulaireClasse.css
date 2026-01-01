@@ -71,6 +71,12 @@
       RESPONSIVE MOBILE
 =========================== */
 @media (max-width: 480px) {
+
+  .formulaire-container {
+    min-height: auto;     /* 🔑 enlève le plein écran */
+    padding: 12px;
+    align-items: flex-start;
+  }
   .formulaire-form {
     padding: 20px;
   }
