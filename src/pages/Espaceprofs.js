@@ -69,6 +69,34 @@ const Espaceprofs = () => {
     setCoursClasse([]);
   };
 
+
+  const handleDeleteCours = async (coursId) => {
+    const confirmSuppression = window.confirm(
+      "Voulez-vous vraiment supprimer ce cours ?"
+    );
+    if (!confirmSuppression) return;
+  
+    try {
+      await axios.delete(`${API_URL}/cours/${coursId}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+  
+      // ✅ Mise à jour correcte du state
+      setCoursClasse((prev) => prev.filter((c) => c._id !== coursId));
+  
+      alert("✅ Cours supprimé avec succès !");
+    } catch (err) {
+      console.error("Erreur lors de la suppression du cours :", err);
+  
+      if (err.response?.status === 404) {
+        alert("❌ Cours introuvable.");
+      } else {
+        alert("❌ Erreur serveur lors de la suppression du cours.");
+      }
+    }
+  };
+  
+
   // 🔹 Charger infos du prof et classes au montage
   useEffect(() => {
     fetchClasses();
@@ -224,7 +252,7 @@ const Espaceprofs = () => {
           )}
 
           <button
-            onClick={() => handleDelete(c._id)}
+            onClick={() => handleDeleteCours(c._id)}
             style={{
               marginTop: "8px",
               backgroundColor: "#dc3545",
