@@ -52,7 +52,7 @@ const FormulaireClasse=({ onClassCreated })=>{
       />
 
       <input 
-      className="fromulaire-input"
+      className="formulaire-input"
        type="text"
        placeholder="Niveau"
        value={niveau}
