@@ -255,7 +255,7 @@ const Espaceprofs = () => {
             onClick={() => handleDeleteCours(c._id)}
             style={{
               marginTop: "8px",
-              backgroundColor: "#dc3545",
+              /*backgroundColor: "#dc3545",*/
               color: "#fff",
               border: "none",
               padding: "5px 8px",
