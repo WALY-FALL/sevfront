@@ -225,7 +225,7 @@ const Espaceprofs = () => {
           }}
         >
           <div>
-            <strong style={{ fontSize: "14px", color: "#007bff" }}>{c.titre}</strong>
+            <strong style={{ fontSize: "14px", color: "#333" }}>{c.titre}</strong>
             <p style={{ margin: "6px 0", color: "#333", fontSize: "13px" }}>{c.contenu}</p>
           </div>
 
