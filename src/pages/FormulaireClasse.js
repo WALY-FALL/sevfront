@@ -66,12 +66,6 @@ const FormulaireClasse=({ onClassCreated })=>{
           required
       />
 
-      <input className="signup-input" type="password" name="password" placeholder="Mot de passe"
-        value={formData.password} onChange={handleChange} required />
-
-      <input className="signup-input" type="text" name="matiere" placeholder="Matière"
-        value={formData.matiere} onChange={handleChange} required />
-
       <button className="signup-btn" type="submit">
         <strong> Créer la classe</strong>
       </button>
