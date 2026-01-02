@@ -44,20 +44,20 @@ const FormulaireClasse=({ onClassCreated })=>{
 
       <input 
       className="formulaire-input"
-        type="text"
-        placeholder="Série"
-        value={serie}
-        onChange={(e) => setSerie(e.target.value)}
-        required
-      />
-
-      <input 
-      className="formulaire-input"
        type="text"
        placeholder="Niveau"
        value={niveau}
        onChange={(e) => setNiveau(e.target.value)}
        required
+      />
+
+      <input 
+      className="formulaire-input"
+        type="text"
+        placeholder="Série"
+        value={serie}
+        onChange={(e) => setSerie(e.target.value)}
+        required
       />
 
       <textarea
@@ -66,7 +66,7 @@ const FormulaireClasse=({ onClassCreated })=>{
           onChange={(e) => setDescription(e.target.value)}
           required
       />
-<br></br>
+
       <button className="formulaire-btn" type="submit">
         <strong> Créer la classe</strong>
       </button>
